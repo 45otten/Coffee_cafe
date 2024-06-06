@@ -332,6 +332,104 @@ main {
     color: var(--saddle-brown);
     font-family: "Pacifico", sans-serif;
 }
+/********************Event Page***********************/
+.eventSection{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: var(--rosy-brown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+.eventSection h1{
+    font-family: "Pacifico",sans-serif;
+    font-size: 30px;
+    margin-bottom: -20px;
+    text-align: center;
+    z-index: 10;
+}
+.eventSection .con_a,.con_b{
+    position: absolute;
+}
+.eventSection .con_a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+}
+.eventSection .con_b{
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.eventSection .eventSection_a {
+    width: 90%;
+    height: 300px;
+    margin-top: 50px;
+    z-index: 10;
+    display: flex;
+}
+
+.eventSection .eventSection_a .eventSection_aa{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+}
+.eventSection .eventSection_a .eventSection_aa p{
+    margin-top: 50px !important;
+}
+.eventSection .eventSection_a .eventSection_ab{
+    background-color: var(--saddle-brown);
+    color: #fff;
+    border-radius: 5px;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    padding: 15px;
+}
+@media (max-width:1030px){
+    .eventSection .eventSection_a .eventSection_ab div{
+        height: 100%;
+    }
+    .eventSection .eventSection_a .eventSection_ab img{
+        display: none;
+    }
+}
+@media (max-width:860px){
+    .eventSection{
+        height: auto;
+    }
+    .eventSection .eventSection_a{
+        height: auto;
+    }
+    .eventSection .eventSection_a .eventSection_aa{
+        width: 100%;
+    }
+    .eventSection .eventSection_a .eventSection_aa h1,p{
+        text-align: center;
+    }
+    .eventSection .eventSection_a{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:690px){
+    .eventSection .eventSection_a .eventSection_ab{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:480px){
+    .eventSection .eventSection_a .eventSection_ab{
+        width: 80%;
+    }
+}
 
 /******************* About Page **********************/
 
