@@ -62,7 +62,7 @@ main {
     .navBar .navList {
         display: none;
         flex-direction: column;
-        margin-top: 255px;
+        margin-top: 250px;
         border-top: none !important;
         border: 2px solid var(--chocolate);
         padding: 15px;
@@ -71,6 +71,12 @@ main {
         border-bottom-right-radius: 5px;
         position: absolute;
         right: 30px;
+        top: -167px;
+        width: 200px;
+    }
+    .navBar .navList li{
+        padding: 5px;
+        border-bottom: 2px solid var(--chocolate);
     }
 
     .navBar .toggleNavOn {
@@ -186,11 +192,11 @@ main {
     }
 }
 
-@media (max-width: 620px) {
+/* @media (max-width: 620px) {
     .homepgSecTwo .homepgSecTwo_a {
         margin-left: 10px;
     }
-}
+} */
 
 .homepgSecTwo .homepgSecTwo_a h1 {
     margin: 0px;
