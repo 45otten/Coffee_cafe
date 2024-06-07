@@ -71,7 +71,7 @@ main {
         border-bottom-right-radius: 5px;
         position: absolute;
         right: 30px;
-        top: -167px;
+        top: -170px;
         width: 200px;
     }
     .navBar .navList li{
@@ -122,6 +122,8 @@ main {
 
 .navBar ul a {
     color: #fff;
+    border: none;
+    text-decoration: none;
 }
 .navBar ul a:visited{
     color: #fff;
@@ -190,13 +192,30 @@ main {
         width: 100%;
         float: none;
     }
+    .homepgSecTwo .homepgSecTwo_a .homepgText{
+        text-align: center;
+       align-items: center !important;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+    .homepgSecTwo .homepgSecTwo_a .homepgText .homepgReview{
+        width: 40%;
+    }
 }
 
-/* @media (max-width: 620px) {
-    .homepgSecTwo .homepgSecTwo_a {
-        margin-left: 10px;
+@media (max-width: 620px) {
+    .homepgSecTwo .homepgSecTwo_a .homepgText{
+        text-align: center;
+       align-items: center !important;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
     }
-} */
+    .homepgSecTwo .homepgSecTwo_a .homepgText .homepgReview{
+        width: 40%;
+    }
+}
 
 .homepgSecTwo .homepgSecTwo_a h1 {
     margin: 0px;
@@ -417,6 +436,10 @@ main {
     .eventSection .eventSection_a{
         flex-direction: column;
         align-items: center;
+    }
+    .eventSection .eventSection_a .eventSection_ab{
+        margin-bottom: 20px;
+        width: 50%;
     }
 }
 @media (max-width:690px){
